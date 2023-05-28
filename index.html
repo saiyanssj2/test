@@ -2,71 +2,89 @@
 <html>
 <head>
     <title>Chia bố cục trong HTML</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        /* CSS để tạo bố cục linh hoạt */
+        /* CSS để tạo bố cục */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
         }
 
-        header, main, footer {
+        header {
+            background-color: #f1f1f1;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
             padding: 20px;
         }
 
-        header {
-            background-color: #f1f1f1;
-        }
-
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-
-        nav ul li {
-            display: inline;
-            margin-right: 10px;
-        }
-
-        section {
-            margin-bottom: 20px;
+        main .grid-item {
+            text-align: center;
         }
 
         footer {
             background-color: #f1f1f1;
+            padding: 20px;
             text-align: center;
         }
     </style>
 </head>
 <body>
     <header>
-        <!-- Đặt nội dung tiêu đề, logo, menu... -->
+        <!-- Đặt nội dung tiêu đề -->
         <h1>Logo</h1>
-        <nav>
-            <!-- Đặt các liên kết menu -->
-            <ul>
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Giới thiệu</a></li>
-                <li><a href="#">Dịch vụ</a></li>
-                <li><a href="#">Liên hệ</a></li>
-            </ul>
-        </nav>
     </header>
 
     <main>
-        <section>
-            <!-- Đặt nội dung phần giới thiệu -->
-            <h2>Giới thiệu</h2>
-            <p>...</p>
-        </section>
+        <!-- Ô 1 -->
+        <div class="grid-item">
+            <img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt41c476486b063ef8/60ee13df31f9ee2ab08a4dfe/Yasuo_0.jpg" alt="Ảnh 1">
+        </div>
 
-        <section>
-            <!-- Đặt nội dung phần dịch vụ -->
-            <h2>Dịch vụ</h2>
-            <p>...</p>
-        </section>
+        <!-- Ô 2 -->
+        <div class="grid-item">
+            <img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt41c476486b063ef8/60ee13df31f9ee2ab08a4dfe/Yasuo_0.jpg" alt="Ảnh 2">
+        </div>
+
+        <!-- Ô 3 -->
+        <div class="grid-item">
+            <img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt41c476486b063ef8/60ee13df31f9ee2ab08a4dfe/Yasuo_0.jpg" alt="Ảnh 3">
+        </div>
+
+        <!-- Ô 4 -->
+        <div class="grid-item">
+            <img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt41c476486b063ef8/60ee13df31f9ee2ab08a4dfe/Yasuo_0.jpg" alt="Ảnh 4">
+        </div>
+
+        <!-- Ô 5 -->
+        <div class="grid-item">
+            <img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt41c476486b063ef8/60ee13df31f9ee2ab08a4dfe/Yasuo_0.jpg" alt="Ảnh 5">
+        </div>
+
+        <!-- Ô 6 -->
+        <div class="grid-item">
+            <img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt41c476486b063ef8/60ee13df31f9ee2ab08a4dfe/Yasuo_0.jpg" alt="Ảnh 6">
+        </div>
+
+        <!-- Ô 7 -->
+        <div class="grid-item">
+            <img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt41c476486b063ef8/60ee13df31f9ee2ab08a4dfe/Yasuo_0.jpg" alt="Ảnh 7">
+        </div>
+
+        <!-- Ô 8 -->
+        <div class="grid-item">
+            <img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt41c476486b063ef8/60ee13df31f9ee2ab08a4dfe/Yasuo_0.jpg" alt="Ảnh 8">
+        </div>
+
+        <!-- Ô 9 -->
+        <div class="grid-item">
+            <img src="https://images.contentstack.io/v3/assets/blt187521ff0727be24/blt41c476486b063ef8/60ee13df31f9ee2ab08a4dfe/Yasuo_0.jpg" alt="Ảnh 9">
+        </div>
     </main>
 
     <footer>
